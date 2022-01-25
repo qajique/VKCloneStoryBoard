@@ -1,24 +1,251 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VKCloneStoryBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="6yB-lh-VC7">
+                                <rect key="frame" x="18" y="62" width="354" height="41"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlu-bR-axU">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="41"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="backToButtonIcon"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kazhymurat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xy6-Vm-O8w">
+                                        <rect key="frame" x="118" y="0.0" width="102" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDh-W6-ve2">
+                                        <rect key="frame" x="303" y="0.0" width="51" height="41"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="scanButtonIcon"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qe6-xu-kfU">
+                                <rect key="frame" x="18" y="111" width="354" height="1"/>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="NAT-S6-ugk"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-87-92h">
+                                <rect key="frame" x="18" y="120" width="354" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic" translatesAutoresizingMaskIntoConstraints="NO" id="rRs-bw-rWq">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="5KL-Wq-p09"/>
+                                            <constraint firstAttribute="height" constant="80" id="DaM-DV-z4y"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="center" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cqu-rW-KX0">
+                                        <rect key="frame" x="101" y="0.0" width="253" height="77"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кажимурат Омиржан 😎" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dG-KY-Qq6">
+                                                <rect key="frame" x="0.0" y="0.0" width="253" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Durys aitasyz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2e-VJ-xWX">
+                                                <rect key="frame" x="0.0" y="28.333333333333343" width="253" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="online " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cq4-dl-j1Y">
+                                                <rect key="frame" x="0.0" y="56.666666666666664" width="253" height="20.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <color key="textColor" red="0.51861882209999999" green="0.54440188410000001" blue="0.5882425308" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rB4-1E-Y9c">
+                                <rect key="frame" x="18" y="208" width="354" height="32"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Редактироовать">
+                                    <color key="titleColor" red="0.3717594743" green="0.52723157409999999" blue="0.82748681310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="gray" title="Редактировать" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
+                                    <color key="baseForegroundColor" red="0.3717594743" green="0.52723157409999999" blue="0.82748681310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.94524592159999998" green="0.94888323549999998" blue="0.95686489340000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="afJ-Da-Fep">
+                                <rect key="frame" x="18" y="248.00000000000003" width="354" height="57.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTf-L7-vtA">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="57.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="storyIcon" imagePlacement="top" title="История" imagePadding="8">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="0.0"/>
+                                            <color key="baseForegroundColor" red="0.3717594743" green="0.52723157409999999" blue="0.82748681310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvt-Ug-EYW">
+                                        <rect key="frame" x="109.33333333333331" y="0.0" width="67.666666666666686" height="57.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="noteIcon" imagePlacement="top" title="Запись" imagePadding="8">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="0.0"/>
+                                            <color key="baseForegroundColor" red="0.3717594743" green="0.52723157409999999" blue="0.82748681310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llj-Di-XGL">
+                                        <rect key="frame" x="210.66666666666666" y="0.0" width="55.333333333333343" height="57.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="photoIcon" imagePlacement="top" title="Фото" imagePadding="8">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="0.0"/>
+                                            <color key="baseForegroundColor" red="0.3717594743" green="0.52723157409999999" blue="0.82748681310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmp-kJ-fLg">
+                                        <rect key="frame" x="299.33333333333331" y="0.0" width="54.666666666666686" height="57.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="clipIcon" imagePlacement="top" title="Клип" imagePadding="8">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="0.0"/>
+                                            <color key="baseForegroundColor" red="0.3717594743" green="0.52723157409999999" blue="0.82748681310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUU-Zr-cX8">
+                                <rect key="frame" x="18" y="313.33333333333331" width="354" height="1"/>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="GIf-FS-h1U"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cs6-pH-h89">
+                                <rect key="frame" x="18" y="322.33333333333331" width="354" height="124"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUa-R9-YTF">
+                                        <rect key="frame" x="0.0" y="0.0" width="307" height="31"/>
+                                        <rect key="contentStretch" x="0.10000000000000001" y="0.0" width="1" height="1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="eduIcon" title="Образование: Université de la Nouvelle" imagePadding="7">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                            <color key="baseForegroundColor" red="0.43633955720000001" green="0.4659650326" blue="0.50981110330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeQ-y9-Afv">
+                                        <rect key="frame" x="0.0" y="31" width="157.33333333333334" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="followersIcon" title="68 подписчиков" imagePadding="10">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                            <color key="baseForegroundColor" red="0.43633955720000001" green="0.4659650326" blue="0.50981110330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hu1-Js-LEK">
+                                        <rect key="frame" x="0.0" y="62" width="204.66666666666666" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="jobIcon" title="Указать место работы" imagePadding="10">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="baseForegroundColor" red="0.3717594743" green="0.52723157409999999" blue="0.82748681310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfh-Dq-Rdb">
+                                        <rect key="frame" x="0.0" y="93" width="223" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="infoIcon" title="Подробная информация" imagePadding="10">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
+                                            <color key="baseForegroundColor" red="0.3717594743" green="0.52723157409999999" blue="0.82748681310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wN8-e6-zfm">
+                                <rect key="frame" x="18" y="454.33333333333331" width="354" height="0.66666666666668561"/>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="ybl-Jl-xyR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wN8-e6-zfm" secondAttribute="trailing" constant="18" id="12j-bC-EIU"/>
+                            <constraint firstItem="wN8-e6-zfm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="5OF-9e-Kr4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qe6-xu-kfU" secondAttribute="trailing" constant="18" id="6mh-wZ-H7c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gUU-Zr-cX8" secondAttribute="trailing" constant="18" id="9Ix-lo-ZEV"/>
+                            <constraint firstItem="gUU-Zr-cX8" firstAttribute="top" secondItem="afJ-Da-Fep" secondAttribute="bottom" constant="8" id="9kp-iO-Uh3"/>
+                            <constraint firstItem="Qe6-xu-kfU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="ENZ-XX-ku1"/>
+                            <constraint firstItem="cs6-pH-h89" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="G1y-dd-t8x"/>
+                            <constraint firstItem="rB4-1E-Y9c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="I15-Zd-iao"/>
+                            <constraint firstItem="gUU-Zr-cX8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="LNk-Jb-bOQ"/>
+                            <constraint firstItem="rB4-1E-Y9c" firstAttribute="top" secondItem="bbI-87-92h" secondAttribute="bottom" constant="8" id="LYY-Xc-XlS"/>
+                            <constraint firstItem="wN8-e6-zfm" firstAttribute="top" secondItem="cs6-pH-h89" secondAttribute="bottom" constant="8" id="M85-cK-E1V"/>
+                            <constraint firstItem="Qe6-xu-kfU" firstAttribute="top" secondItem="6yB-lh-VC7" secondAttribute="bottom" constant="8" id="MBT-TD-cFf"/>
+                            <constraint firstItem="afJ-Da-Fep" firstAttribute="top" secondItem="rB4-1E-Y9c" secondAttribute="bottom" constant="8" id="RQO-Hp-Lmy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cs6-pH-h89" secondAttribute="trailing" constant="18" id="UIs-F2-LGN"/>
+                            <constraint firstItem="6yB-lh-VC7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="X2E-OG-Gak"/>
+                            <constraint firstItem="afJ-Da-Fep" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="Xtt-G8-ejM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="afJ-Da-Fep" secondAttribute="trailing" constant="18" id="bw2-44-f37"/>
+                            <constraint firstItem="6yB-lh-VC7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="csB-KG-Bl6"/>
+                            <constraint firstItem="bbI-87-92h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="dXm-iC-8Ij"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bbI-87-92h" secondAttribute="trailing" constant="18" id="dlo-WF-lp7"/>
+                            <constraint firstItem="bbI-87-92h" firstAttribute="top" secondItem="Qe6-xu-kfU" secondAttribute="bottom" constant="8" id="fDq-qc-gmt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rB4-1E-Y9c" secondAttribute="trailing" constant="18" id="iEg-1j-S9w"/>
+                            <constraint firstItem="cs6-pH-h89" firstAttribute="top" secondItem="gUU-Zr-cX8" secondAttribute="bottom" constant="8" id="ick-ap-H29"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6yB-lh-VC7" secondAttribute="trailing" constant="18" id="iih-mG-BwO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="33.846153846153847" y="83.886255924170612"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backToButtonIcon" width="11" height="19"/>
+        <image name="clipIcon" width="19" height="21"/>
+        <image name="eduIcon" width="18" height="16"/>
+        <image name="followersIcon" width="14" height="14"/>
+        <image name="infoIcon" width="17" height="17"/>
+        <image name="jobIcon" width="17" height="16"/>
+        <image name="noteIcon" width="21" height="21"/>
+        <image name="photoIcon" width="21" height="21"/>
+        <image name="profilePic" width="1920" height="1080"/>
+        <image name="scanButtonIcon" width="27" height="27"/>
+        <image name="storyIcon" width="24" height="21"/>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
